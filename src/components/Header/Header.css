@@ -24,7 +24,7 @@ header h1 {
   font-size: 2.5em;
 }
 
-h1,
+/* h1,
 h2 {
   text-align: center;
 }
@@ -41,12 +41,4 @@ label {
 
 .member-item {
   padding: 0.25em 0;
-}
-
-footer {
-  margin-top: 2em;
-  text-align: center;
-  color: #fff;
-  background: #f76c6c;
-  padding: 0.25em 0;
-}
+} */
