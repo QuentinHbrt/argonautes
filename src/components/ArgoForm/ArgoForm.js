@@ -11,6 +11,7 @@ export const ArgoForm = (props) => {
     if (nameValue === "") {
       return;
     }
+    console.log("submit");
     e.preventDefault();
     const newArgonaute = {
       id: Math.random().toString(),
