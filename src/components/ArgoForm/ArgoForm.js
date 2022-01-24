@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { db } from "../../firebase-config";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 
 export const ArgoForm = (props) => {
   const [nameValue, setNameValue] = useState("");
@@ -13,10 +15,11 @@ export const ArgoForm = (props) => {
     }
     console.log("submit");
     e.preventDefault();
-    const newArgonaute = {
-      //   id: Math.random().toString(),
+    const newArgonaute = addDoc(collection(db, "users"), {
+      id: Math.random().toString(),
       name: nameValue,
-    };
+      datetime: serverTimestamp(),
+    });
     props.onSubmitArgonaute(newArgonaute);
     setNameValue("");
   }
