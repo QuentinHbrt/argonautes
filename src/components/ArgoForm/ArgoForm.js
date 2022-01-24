@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { db } from "../../firebase-config";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import "./ArgoForm.css";
 
 export const ArgoForm = (props) => {
   const [nameValue, setNameValue] = useState("");
@@ -25,7 +26,7 @@ export const ArgoForm = (props) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="new-member-form" onSubmit={handleSubmit}>
       <label>{"Nom de l'Argonaute"}</label>
       <input
         onChange={handleChangeName}

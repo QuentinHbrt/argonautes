@@ -3,7 +3,7 @@ import React from "react";
 export const ArgoItem = (props) => {
   return (
     <>
-      <li>{props.argonaute.name}</li>
+      <li className="member-item">{props.argonaute.name}</li>
     </>
   );
 };

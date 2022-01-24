@@ -1,0 +1,12 @@
+.container {
+  column-count: 3;
+}
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.member-item {
+  padding: 0.25em 0;
+}
