@@ -1,3 +1,4 @@
+// Firebase config: code récupérer depuis le site de firebase
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "@firebase/firestore";
 

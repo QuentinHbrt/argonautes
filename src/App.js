@@ -17,11 +17,9 @@ function App() {
   }
 
   useEffect(() => {
-    console.log("useEffect Hook!!!");
     const q = query(collection(db, "users"));
     orderBy("datetime", "desc");
     onSnapshot(q, (snapshot) => {
-      console.log("Firebase Snap!");
       setArgonautes(
         snapshot.docs.map((doc) => {
           return {
